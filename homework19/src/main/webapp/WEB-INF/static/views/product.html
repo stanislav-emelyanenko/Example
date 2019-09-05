@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Online-shop</title>
+	<link rel="stylesheet" data-th-href="@{/css/style.css}"
+	      media="all">
+</head>
+<body>
+<form action="logout" method="post">
+	<nav>
+		<button>logout</button>
+	</nav>
+</form>
+<div class="box">
+	<p class="msg" th:text="'Hello ' + ${order.user.login} + ' !'"></p>
+	<p class="msg">Make you order</p>
+	<form method="post" action="product">
+		<select name="selected">
+			<option th:each="product: ${products}" th:value="${product.id}"
+			        th:text="${product.title} + ' ' + ${product.price} + '$'"></option>
+		</select>
+		<input type="submit" value="Add item"/>
+	</form>
+	<form method="post" action="basket">
+		<input type="submit" value="Submit">
+	</form>
+	<p>You have already chosen:</p>
+	<p th:each="pickedProduct: ${order.products}"
+	   th:text="${pickedProduct.title} + ' ' + ${pickedProduct.price} + '$'"></p>
+</div>
+</body>
+</html>

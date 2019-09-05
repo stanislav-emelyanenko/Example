@@ -1,0 +1,12 @@
+INSERT INTO GOOD (ID, TITLE, Price)
+VALUES (1, 'Lays', 1.0);
+INSERT INTO GOOD (ID, TITLE, Price)
+VALUES (2, 'Coca-Cola', 2.0);
+INSERT INTO GOOD (ID, TITLE, Price)
+VALUES (3, 'Sprite', 2.0);
+INSERT INTO GOOD (ID, TITLE, Price)
+VALUES (4, 'Fanta', 2.0);
+INSERT INTO User (id, login, password)
+VALUES (1, 'Stas', 1);
+INSERT INTO SHOP_ORDER (ID, USER_ID, TOTAL_PRICE)
+VALUES (1, 1, 0.0);
