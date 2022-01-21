@@ -22,7 +22,7 @@
         <spring-security.version>5.1.1.RELEASE</spring-security.version>
         <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
         <hibernate.version>5.3.7.Final</hibernate.version>
-        <h2database.version>1.4.194</h2database.version>
+        <h2database.version>2.1.210</h2database.version>
         <tomcat-dbcp.version>9.0.1</tomcat-dbcp.version>
         <orika-core.version>1.5.1</orika-core.version>
 
